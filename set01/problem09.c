@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(){
     float i,n;
     printf("n: "); 
