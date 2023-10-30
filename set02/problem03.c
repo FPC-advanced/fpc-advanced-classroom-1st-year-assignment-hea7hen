@@ -27,10 +27,10 @@ int is_composite(int n){
                 result=1;
             }
         }
-
     }
     return result;
 }
+
 void output(int n, int result){
     if(result==1){
         printf("%d is a composite number.",n);
