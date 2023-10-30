@@ -14,7 +14,7 @@ int main(){
 void input(float *x1, float *y1, float *x2, float *y2){
     printf("x1: ");
     scanf("%f",x1);
-    printf("%d", x1);
+    printf("%f", x1);
     printf("y1: ");
     scanf("%f",y1);
     printf("x2: ");
