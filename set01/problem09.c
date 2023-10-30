@@ -6,5 +6,5 @@ int main(){
     printf("n: "); 
     scanf("%f", &n);
     for(i=0.01;i*i<n;i+=0.01);
-    printf("%.2f",i);
+    printf("%.1f",i);
 }
