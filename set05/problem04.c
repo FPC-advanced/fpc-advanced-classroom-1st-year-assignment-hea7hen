@@ -1,66 +1,50 @@
-/*03.  Write a program find whether a number is a composite number
-
-> A Composite number has more than 2 factors.
-
-**Function Declarations**
-```c
-int input_number();
-int is_composite(int n);
-void output(int n, int result);*/
-
 #include <stdio.h>
 
-int input_number();
-int is_composite(int n);
-void output(int n, int result);
+void input_camel_details(float *radius, float *height, float *length);
+int find_mood(float radius, float height, float length);
+void output(float radius, float height, float length, int mood);
 
-int main()
-{
-    int n,result;
-    n=input_number();
-    result=is_composite(n);
-    output(n,result);
+int main(){
+    float radius,height,length;
+    input_camel_details(&radius,&height,&length);
+    int mood=find_mood(radius,height,length);
+    output(radius,height,length,mood);
 }
-
-int input_number()
-{
-    int x;                                      
-    printf("Enter number:");
-    scanf("%d",&x);
-    return x;
+void input_camel_details(float *radius, float *height, float *length){
+    printf("radius: ");
+    scanf("%f",radius);
+    printf("length: ");
+    scanf("%f",length);
+    printf("height: ");
+    scanf("%f",height);
 }
-
-int is_composite(int n)
-{
-    int count=0;
-    if (n<=1)
-    {
-        return 0;
+int find_mood(float radius, float height, float length){
+    int res=0;
+    if(radius<height&&radius<length){
+        res=1;
     }
-
-    int i;
-    for (i=2;  i<=n; i++)
+    else if (height<length&&height<radius)
     {
-        if (n%i==0)
-        {
-            count=count+1;
-            if (count >2)
-            {
-                return 1;
-            }
-        }
+        res=2;
     }
-    return 0;
+    else{
+        res=3;
+    }
+    return res;
+
 }
+void output(float radius, float height, float length, int mood){
+    if(mood==1){
+        printf("The Camel is Sick");
 
-void output(int n, int result)
-{
-    if (result)
-    {
-        printf("%d is a composite number.",n);
     }
-    else
+    else if (mood==2)
     {
-        printf("%d is not a composite number",n);
+        printf("The Camel is Happy.");
     }
+    else{
+        printf("The Camel is Tense.");
+    }
+
+    
 }
