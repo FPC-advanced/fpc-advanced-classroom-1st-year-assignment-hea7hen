@@ -26,6 +26,6 @@ int input_n(){
 void input_n_triangles(int n, Triangle t[n]){
     for(int i=1;i<=n;i++){
         printf("Enter triangle %d",i);
-        scanf("%d",t[0])
+        scanf("%d",t[0]);
     }
 }

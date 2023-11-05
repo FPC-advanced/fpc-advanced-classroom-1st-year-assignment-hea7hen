@@ -26,12 +26,14 @@ void input_array(int n, int a[n]){
 }
 int find_largest_index(int n, int a[n]){
     int L=a[0];
+    int index=0;
     for(int i = 0;i<n;i++){
         if(a[i]>L){
             L=a[i];
+            index=i;
         }
     }
-    return L;
+    return index;
 }
 void output(int index){
     printf("The index of the largest number in the array is %d",index);
