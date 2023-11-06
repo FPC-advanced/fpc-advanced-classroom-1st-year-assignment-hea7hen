@@ -12,31 +12,31 @@ int input(){
 
 
 int main(){
-    Fraction Greatest,Greatest2,Greatest3;
+    Fraction Smallest,Smallest2,Smallest3;
     printf("num: ");
-    Greatest.num = input();
+    Smallest.num = input();
     printf("den: ");
-    Greatest.den = input();
+    Smallest.den = input();
     printf("num2: ");
-    Greatest2.num = input();
+    Smallest2.num = input();
     printf("de2: ");
-    Greatest2.den = input();
+    Smallest2.den = input();
     printf("num3: ");
-    Greatest3.num = input();
+    Smallest3.num = input();
     printf("den3: ");
-    Greatest3.den = input();
+    Smallest3.den = input();
     float a,b,c;
-    a = (float)Greatest.num/Greatest.den;
-    b = (float)Greatest2.num/Greatest2.den;
-    c = (float)Greatest3.num/Greatest3.den;
+    a = (float)Smallest.num/Smallest.den;
+    b = (float)Smallest2.num/Smallest2.den;
+    c = (float)Smallest3.num/Smallest3.den;
     float  result;
     if(a<=b&&a<=c){
-        printf("%d/%d",Greatest.num,Greatest.den);
+        printf("%d/%d",Smallest.num,Smallest.den);
     }
     else if (b<=c){
-        printf("%d/%d",Greatest2.num,Greatest2.den);
+        printf("%d/%d",Smallest2.num,Smallest2.den);
     }
     else{
-        printf("%d/%d",Greatest3.num,Greatest3.den);
+        printf("%d/%d",Smallest3.num,Smallest3.den);
     }
 }
