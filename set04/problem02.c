@@ -10,6 +10,7 @@ int input(){
     return x;
 }
 
+
 int main(){
     Fraction Greatest,Greatest2,Greatest3;
     printf("num: ");
@@ -25,18 +26,17 @@ int main(){
     printf("den3: ");
     Greatest3.den = input();
     float a,b,c;
-    a = Greatest.num/Greatest.den;
-    b = Greatest2.num/Greatest2.den;
-    c = Greatest3.num/Greatest3.den;
+    a = (float)Greatest.num/Greatest.den;
+    b = (float)Greatest2.num/Greatest2.den;
+    c = (float)Greatest3.num/Greatest3.den;
     float  result;
-    if(a>=b&&a>=c){
-        result=a;
+    if(a<=b&&a<=c){
+        printf("%d/%d",Greatest.num,Greatest.den);
     }
-    else if (b>=c){
-        result=b;
+    else if (b<=c){
+        printf("%d/%d",Greatest2.num,Greatest2.den);
     }
     else{
-        result=c;
+        printf("%d/%d",Greatest3.num,Greatest3.den);
     }
-    printf("%f",result);  
 }

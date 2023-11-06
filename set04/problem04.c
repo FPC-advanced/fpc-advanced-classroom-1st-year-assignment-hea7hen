@@ -9,5 +9,7 @@ void output(int n, float a[n], float x, float result);
 int main(){
     int n = input_degree();
     int a[n];
+    input_coefficients(n,a);
+    
     
 }

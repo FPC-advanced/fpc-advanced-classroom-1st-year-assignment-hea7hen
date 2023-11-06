@@ -30,7 +30,7 @@ void add(int num1, int den1, int num2, int den2, int *res_num, int *res_den){
     for(int i=1;i<=*res_num;i++){
         if(*res_num%i==0&&*res_den%i==0&&i>gcd){
             gcd = i;
-            printf("gcd: %d\n",i);
+            // printf("gcd: %d\n",i);
         }
     }
     while(*res_num%gcd==0&&*res_den%gcd==0&&gcd>1){
