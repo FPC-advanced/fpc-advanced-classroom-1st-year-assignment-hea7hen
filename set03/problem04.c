@@ -12,18 +12,16 @@ int main(){
 int input(){
     int c;
     printf("n: ");
-    scanf("%d",c);
+    scanf("%d",&c);
     return c;
 }
 int find_fibo(int n){
-    int fib[100]={0,1};
-    int len=0;
-
-    for(int i=0;i<n;i++){
-        
+    int fib[100]={1,1};
+    for(int i=1;i<n-1;i++){
+        fib[i+1]=fib[i]+fib[i-1];
+        // printf("fib: %d\n",fib[i+1]);
     }
-    int fibo = fib[len-1];
-    return fibo;
+    return fib[n-1];
 }
 void output(int n, int fibo){
     printf("fib: %d",fibo);

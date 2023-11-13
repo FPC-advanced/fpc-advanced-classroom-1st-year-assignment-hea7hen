@@ -21,17 +21,14 @@ int sub_str_index(char* string, char* substring){
     for(int i=0;string[i]!='\0';i++){
         if(string[i]==substring[0]){
             int match = 1;
-            // index=i;
-            for(int j=1;substring[j]!='\0';j++){
+            index=i;
+            for(int j=0;substring[j]!='\0';j++){
                 // printf("j: %c\n",substring[j]);
                 // printf("i: %c\n",string[j+i]);
                 if(substring[j]!=string[j+i]){
                     match=0;
                     break;
-                }
-                else{
-                    index = i;
-                }
+                };
             }
             if(match){
                 // printf("Index: %d\n",index);
