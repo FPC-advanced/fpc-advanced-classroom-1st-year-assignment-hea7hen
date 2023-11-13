@@ -9,11 +9,14 @@ typedef struct line {
     float distance;
 } Line;
 
-Point input_point();
+Point input_point(){
+    Line
+}
 Line input_line();
 void find_length(Line *l);
 void output(Line l);
 
 int main(){
     Point Line;
+
 }
