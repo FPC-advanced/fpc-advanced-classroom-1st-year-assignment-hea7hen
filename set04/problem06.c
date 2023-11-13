@@ -18,23 +18,20 @@ void input_string(char *a){
 int count_words(char *string){
     int count = 0;
     int space = 1;
-    int check=-1;
-    for(int i=0;i<100;i++){
-        if (check==0&&string[i]==' ')
-        {
+    int check=0;
+    for(int i=0;i<strlen(string);i++){
+        if(string[i]!=' '&&string[i]!='\0'&&string[i]!='\n'&&check==0){
+            count++;
             check=1;
+            // printf("%d",count);
         }
-        else if(count==0&&string[i]!=' '){
-            check = 0;
-            count++;
-        }
-        else if(check==1&&string[i]!=' '){
-            count++;
+        else if(check==1&&string[i]==' '){
+            // printf("Space.\n");
             check=0;
         }
     }
     return count;
 }
 void output(char *string, int no_words){
-    printf("%d",no_words);
+    printf("%d\n",no_words);
 }

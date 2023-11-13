@@ -16,17 +16,11 @@ int input(){
     return c;
 }
 int find_fibo(int n){
-    int fib[]={0,1};
+    int fib[100]={0,1};
     int len=0;
+
     for(int i=0;i<n;i++){
-        for(int i=0;fib[i]!='\0';i++){
-        len++;
-        }
-        int a=fib[len-1];
-        int b=fib[len-2];
-        int c=a+b;
-        fib[len]=c;
-        printf("%d",fib[len]);
+        
     }
     int fibo = fib[len-1];
     return fibo;

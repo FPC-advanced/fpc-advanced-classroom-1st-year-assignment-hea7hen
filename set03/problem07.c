@@ -16,6 +16,4 @@ void output(Line l);
 
 int main(){
     Point Line;
-    int l = input_line();
-    
 }
