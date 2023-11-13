@@ -31,9 +31,9 @@ int nCr(int n, int r){
     for(int i=1;i<=n-r;i++){
         c_r*=i;
     }
-    printf("c: %d\n",c);
-    printf("r1: %d\n",r1);
-    printf("c_r: %d\n",c_r);
+    // printf("c: %d\n",c);
+    // printf("r1: %d\n",r1);
+    // printf("c_r: %d\n",c_r);
     int res=c/((c_r)*r1);
     return res;
 }
