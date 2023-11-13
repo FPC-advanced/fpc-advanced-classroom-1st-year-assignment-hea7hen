@@ -17,17 +17,17 @@ int input() {
     return num;
 }
 int find_gcd(int a, int b) {
-    int cd1[100],e=0;
-
-    for(int i=2;i<a/2+1 && i<b/2+1;i++){
+    // int cd1[100],e=0;
+    int gcd = 1;
+    for(int i=1;i<a/2+1 && i<b/2+1;i++){
         if(a%i==0 && b%i==0){
-            cd1[e]=i;
-            e++;
+            gcd=i;
+            // printf("i: %d",i);
+            // e++;
         }
     }
-    int gcd = cd1[e-1];
+    // int gcd = cd1[e-1];
     return gcd;
-    
 }
 void output(int a, int b, int gcd){
     printf("gcd: %d",gcd);
