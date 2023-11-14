@@ -18,7 +18,7 @@ void compare(int a, int b, int c, int *largest){
     }
     else{
         *largest=c;
-        }
+    }
 }
 
 void output(int a, int b, int c, int largest){
