@@ -12,7 +12,7 @@ typedef struct line {
 
 Point input_point(){
     Point p;
-    printf("co-ord x:\n");
+    printf("co-ord x:\n"); 
     scanf("%f",&p.x);
     printf("co-ord y:\n");
     scanf("%f",&p.y);
