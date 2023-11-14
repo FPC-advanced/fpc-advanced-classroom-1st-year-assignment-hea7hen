@@ -17,7 +17,7 @@ int main(){
     Triangle t;
 }
 int input_n(){
-    int x;
+    int x; 
     printf("Enter the numbers of triangles to be compared with: ");
     scanf("%d",&x);
     return x;

@@ -26,7 +26,6 @@ float evaluate_polynomial(int n, float a[n], float x){
         float k = a[i]*(pow(x,i));
     }
     return result;
-
 }
 void output(int n, float a[n], float x, float result){
     printf("final result: %f",result);
