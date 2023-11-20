@@ -7,13 +7,8 @@ int input(){
     return n;
 }
 float sqroot(float n){
-    float i;
-    for(i=n/100;i*i<0.001;){
-        if((i*i)<n){
-            i*=i;
-            printf("i: %f",i);
-        }
-    }
+    float i=0;
+    for(i=1.414;i*i<n;i+=0.0001);
     return i;
 }
 int main(){

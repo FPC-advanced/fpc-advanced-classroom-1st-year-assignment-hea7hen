@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 typedef struct point {
     float x,y;
@@ -18,15 +19,35 @@ int input_n(){
     return n;
 }
 Point input_point(char *promt_msg){
-    printf("Enter the coordinates of point 1 (x,y):");
+                
 }
-int input_polygon(Polygon *p);
-float find_distance(Point a, Point b);
-void find_perimeter(Polygon* p);
-void output(Polygon p);
+int input_polygon(Polygon *p){
+    p->sides = input_n();
+    char prompt;
+    for(int i=0;i<p->sides;i++){
+        prompt=("Enter the coordinates of point %d (x,y):",i+1);
+        p->p[i] = input_point(&prompt);
+    }
+    return p->sides;
+}
+float find_distance(Point a, Point b){
+    Point p;
+    float sqt = pow(p.x,2)*pow(p.y,2);
+    float dist = sqrt(sqt);
+    return dist;
+}
+void find_perimeter(Polygon* p){
+    for(int i=0;i<p->sides-1;i++){
+        p[i] = p[o]
+    }
+}
+void output(Polygon p){
+    printf("The perimeter of the polynomial is %d",p.perimeter);
+}
 
 int main(){
     Polygon p;
-    int n = input_n();
-    
+    int n = input_polygon(&p);
+    input_polygon(&p);
+    find_perimeter();;
 }
